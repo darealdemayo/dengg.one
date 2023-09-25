@@ -23,7 +23,7 @@
       <hostname>smtp.purelymail.com</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
     <documentation url="https://purelymail.com/docs/setup/technical">
