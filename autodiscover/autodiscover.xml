@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clientConfig version="1.1">
+  <emailProvider id="techwiz-services.eu">
+    <domain>dengg.one</domain>
+    <displayName>TechWizMail</displayName>
+    <displayShortName>TWMail</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.purelymail.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.purelymail.com</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.purelymail.com</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-encrypted</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <documentation url="https://purelymail.com/docs/setup/technical">
+      <descr lang="de">Hilfe / Setup Guide</descr>
+      <descr lang="en">Help / Setup Guide</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
